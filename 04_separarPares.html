@@ -5,12 +5,20 @@
     // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
-    //ENTRADA
+  // ENTRADA
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+   
+    // PROCESSAMENTO
+    let numerosPares = [];
+   for(let numero of listaDeItens) {
+        if (numero % 2 === 0) {
+      numerosPares.push(numero)
+        }}
+    let quantidadePares = numerosPares.length;
+    let quantidadeTotal = listaDeItens.length;
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    // SAÍDA
+     document.write(`Números pares: ${numerosPares} <br>`);
+     document.write(`Quantidade de números pares ${quantidadePares} <br>`);
+    document.write(`Quantidade total de elementos da lista original é: ${quantidadeTotal} <br>`);
 </script>
