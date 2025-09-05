@@ -7,9 +7,14 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+
     //PROCESSAMENTO
-    let inteirosPositivos = listaDeNumeros.filter(num => Number.isInteger(num) && num > 0);
+    let inteiros = []
+for (numeroInteiroP of listaDeNumeros) {
+    if(Number.isInteger(numeroInteiroP) && numeroInteiroP > 0)
+      inteiros.push(numeroInteiroP)
+}
+
     //SAÍDA
-    document.write(`Os números inteiros e positivos são: ${inteirosPositivos.join(`, `)} <br>`);
-    document.write(`Foram localizados ${inteirosPositivos.length} números positivos`);
+document.write(`a lista de numeros inteiros positivos é ${inteiros}`);
 </script>
